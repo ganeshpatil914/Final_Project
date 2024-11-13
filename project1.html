@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: linear-gradient(to right, gray, skyblue, lightgreen );
+    }
+    nav {
+      height: 10vh;
+      width: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      color: white;
+    }
+    #img {
+      display: flex;
+      align-items: center;
+    }
+    #img img {
+      height: 40px;
+      margin-right: 10px;
+      background-color: white;
+    }
+    #sear {
+      display: flex;
+      align-items: center;
+    }
+    #sear input {
+      height: 40px;
+      width: 300px;
+      border: none;
+      border-radius: 3px;
+      padding-left: 10px;
+      color: white;
+    }
+    #icons {
+      display: flex;
+      align-items: center;
+      border-radius: 40px;
+    }
+    #icons a {
+      text-decoration: none;
+      font-size: 16px;
+      color: white;
+      margin: 0 15px;
+      display: flex;
+      align-items: center;
+    }
+    #icons i {
+      font-size: 24px;
+      margin-right: 5px;
+    }
+    .container {
+      display: flex;
+      margin: 20px;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: black;
+      color: white;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-right: 20px;
+      border-radius: 30px;
+    }
+    .main-content {
+      flex: 1;
+      background-color: black;
+      color: white;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+    }
+    .profile-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .profile-section img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .profile-section .name-location {
+      font-size: 14px;
+    }
+    .update-profile {
+      background-color: black;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      text-decoration: bold;
+    }
+    .post-options {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    .post-options div {
+      text-align: center;
+      color: #0073b1;
+      cursor: pointer;
+    }
+    .news-section {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 20px;
+    }
+    footer a {
+      color: #0073b1;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    footer .social-icons {
+      margin-top: 10px;
+    }
+    footer .social-icons i {
+      font-size: 24px;
+      margin: 0 10px;
+      color: white;
+      cursor: pointer;
+    }
+    footer .social-icons i:hover {
+      color: #0073b1;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div id="img">
+      <img src="https://cdn-icons-png.flaticon.com/128/3536/3536569.png" alt="LinkedIn Logo">
+      <div id="sear">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search">
+      </div>
+    </div>
+    <div id="icons">
+      <a href="#"><i class="fa-solid fa-house-chimney"></i>Home</a>
+      <a href="#"><i class="fa-solid fa-user-gear"></i>My Network</a>
+      <a href="#"><i class="fa-solid fa-briefcase"></i>Jobs</a>
+      <a href="#"><i class="fa-solid fa-comment-dots"></i>Messaging</a>
+      <a href="#"><i class="fa-solid fa-bell"></i>Notifications</a>
+      <a href="#"><i class="fa-solid fa-circle-user"></i>Me</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="sidebar">
+      <div class="profile-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHhYyhYnLv7a1Bw2BdjzZ-3f2R5koeOEXw6A&s" alt="Profile Picture">
+        <div class="name-location">
+          <strong>NMJJG</strong><br>
+          Nippani,Belgaum, Karnataka
+        </div>
+      </div>
+      <div class="update-profile"><a href="./juned.html">update-profile</a></div>
+      <ul>
+        <li>Contacts</li>
+        <li>Saved Items</li>
+        <li>Groups & Events</li>
+        <li>Skills</li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="header">
+        <h2>Get set up on Jobieeee.in</h2>
+        <p>Add more to your work experiences and education.</p>
+      </div>
+      <div class="post-options">
+        <div>Media</div>
+        <div>Event</div>
+        <div>Write article</div>
+      </div>
+      <div class="news-section">
+        <h3>Jobieeee.in News</h3>
+        <ul>
+          <li>Greener path</li>
+          <li>India Smartphone Market</li>
+          <li>NMJJG funding</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Jobieeee.in Dashboard. All rights reserved.</p>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Support</a>
+    <div class="social-icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+  </footer>
+</body>
+</html>
